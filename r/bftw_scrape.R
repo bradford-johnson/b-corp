@@ -12,15 +12,15 @@ page <- read_html(link)
   html_nodes("#employees-1-9 .p-4:nth-child(1)") |>
   html_text()
 
-country <- page %>%
+country <- page |>
   html_nodes("#employees-1-9 .p-4:nth-child(2)") |>
   html_text()
 
-industry <- page %>%
+industry <- page |>
   html_nodes("#employees-1-9 .p-4~ .p-4+ .text-left") |>
   html_text()
 
-area_score <- page %>%
+area_score <- page |>
   html_nodes("#employees-1-9 .text-right.p-4") |>
   html_text()
 
@@ -34,15 +34,15 @@ company_name <- page |>
   html_nodes("#employees-10-49 .p-4:nth-child(1)") |>
   html_text()
 
-country <- page %>%
+country <- page |>
   html_nodes("#employees-10-49 .p-4:nth-child(2)") |>
   html_text()
 
-industry <- page %>%
+industry <- page |>
   html_nodes("#employees-10-49 .p-4~ .p-4+ .text-left") |>
   html_text()
 
-area_score <- page %>%
+area_score <- page |>
   html_nodes("#employees-10-49 .text-right.p-4") |>
   html_text()
 
@@ -56,15 +56,15 @@ company_name <- page |>
   html_nodes("#employees-10-49+ .flex-col-stack-2 .p-4:nth-child(1)") |>
   html_text()
 
-country <- page %>%
+country <- page |>
   html_nodes("#employees-10-49+ .flex-col-stack-2 .p-4:nth-child(2)") |>
   html_text()
 
-industry <- page %>%
+industry <- page |>
   html_nodes("#employees-10-49+ .flex-col-stack-2 .p-4~ .p-4+ .text-left") |>
   html_text()
 
-area_score <- page %>%
+area_score <- page |>
   html_nodes("#employees-10-49+ .flex-col-stack-2 .text-right.p-4") |>
   html_text()
 
@@ -78,15 +78,15 @@ company_name <- page |>
   html_nodes("#employees-250-999 .p-4:nth-child(1)") |>
   html_text()
 
-country <- page %>%
+country <- page |>
   html_nodes("#employees-250-999 .p-4:nth-child(2)") |>
   html_text()
 
-industry <- page %>%
+industry <- page |>
   html_nodes("#employees-250-999 .p-4~ .p-4+ .text-left") |>
   html_text()
 
-area_score <- page %>%
+area_score <- page |>
   html_nodes("#employees-250-999 .text-right.p-4") |>
   html_text()
 
@@ -100,15 +100,15 @@ company_name <- page |>
   html_nodes("#employees-1000\\+ .p-4:nth-child(1)") |>
   html_text()
 
-country <- page %>%
+country <- page |>
   html_nodes("#employees-1000\\+ .p-4:nth-child(2)") |>
   html_text()
 
-industry <- page %>%
+industry <- page |>
   html_nodes("#employees-1000\\+ .p-4~ .p-4+ .text-left") |>
   html_text()
 
-area_score <- page %>%
+area_score <- page |>
   html_nodes("#employees-1000\\+ .text-right.p-4") |>
   html_text()
 
